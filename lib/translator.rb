@@ -31,7 +31,7 @@ def get_japanese_emoticon(file_path, emoticon)
     load_library = load_library(file_path) #we don't need to call YAML. bc it already pre exists in method load_library. and replace load_file with load_library method.
       load_library.each do |meaning, emoticon_symbols|
         if meaning = "grinning"
-          return load_library[emoticon_symbols][1]
+          return load_library[emoticon_symbols][0] = emoticon_symbols[1]
 
         end
       end
