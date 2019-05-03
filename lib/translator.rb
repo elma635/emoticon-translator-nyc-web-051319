@@ -32,6 +32,11 @@ def get_japanese_emoticon(file_path, emoticon)
       load_library.each do |meaning, emoticon_symbols|
         if meaning = "grinning"
           return load_library[emoticon_symbols][0] = emoticon_symbols[1]
+          if meaning = "happy"
+            return load_library[emoticon_symbols][0] = emoticon_symbols[1]
+            if meaning = "sad"
+              return load_library[emoticon_symbols][0] = emoticon_symbols[1]
+              
 
         end
       end
