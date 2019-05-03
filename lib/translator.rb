@@ -7,7 +7,7 @@ def load_library(file_path) #arg is taking in a string, so it's using whatevers 
     translator = {get_meaning: {}, get_emoticon: {}}
       emoticons.each do |meaning, emoticon_symbols| #iterate over resulting hash (emoticons)
           translator[:get_meaning][emoticon_symbols[1]] = meaning #when you make the key you have to set it equal to something, to make it populate
-          #translator[:get_emoticon][emoticon_symbols[2]] = emoticon_symbols
+          translator[:get_emoticon][emoticon_symbols[0]] = emoticon_symbols
  binding.pry
 
           #this is how we want it to look:
