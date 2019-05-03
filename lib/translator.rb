@@ -8,7 +8,9 @@ def load_library(file_path) #arg is taking in a string, so it's using whatevers 
       emoticons.each do |meaning, emoticon_symbols| #iterate over resulting hash (emoticons)
           translator["get_meaning"][emoticon_symbols[1]] = meaning #when you make the key you have to set it equal to something, to make it populate
           translator["get_emoticon"][emoticon_symbols[0]] = emoticon_symbols[1]
- #binding.pry
+
+          # [1] is the japanese symbol, [0] is english symbol, then you have to  call it after emoticon symbol again to show that
+          # english symbol is equal to japanese symbol
 
           #this is how we want it to look:
         # {
