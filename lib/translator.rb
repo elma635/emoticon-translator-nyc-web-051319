@@ -46,7 +46,7 @@ end
 def get_english_meaning(file_path, japanese_emoticon)
   library = load_library(file_path) #setting var = to method + file_path arg.
     #library.each do |meaning, emoticon_symbols| #we dont need to iterate just set conditions, bc load_library method is called.
-      if library["get_meaning"].include? japanese_emoticon
+      if library["get_meaning"].include? (japanese_emoticon)
         library["get_meaning"][japanese_emoticon]
       else
         "Sorry, that emoticon was not found"
