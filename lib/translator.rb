@@ -43,12 +43,11 @@ def get_japanese_emoticon(file_path, emoticon)
       end
     end
 
-def get_english_meaning(file_path, japanese_moticon)
+def get_english_meaning(file_path, japanese_emoticon)
   library = load_library(file_path) #setting var = to method + file_path arg.
     #library.each do |meaning, emoticon_symbols| #we dont need to iterate just set conditions, bc load_library method is called.
-      if library["get_meaning"]
-
-      if meaning[:grinning] =
+      if library["get_meaning"].include? japanese_emoticon
+        return
 
     end
   end
