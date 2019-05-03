@@ -36,6 +36,7 @@ def get_japanese_emoticon(file_path, emoticon)
             return load_library[emoticon_symbols][0] = emoticon_symbols[1]
             if meaning = "sad"
               return load_library[emoticon_symbols][0] = emoticon_symbols[1]
+            else
               
 
         end
