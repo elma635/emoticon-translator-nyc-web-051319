@@ -26,22 +26,22 @@ def load_library(file_path) #arg is taking in a string, so it's using whatevers 
 end
 
 
-def get_japanese_emoticon(file_path, emoticon)
-  #loaded_library = load_library(file_path) -- dont need this bc the line under is doing that already
-    load_library = load_library(file_path) #we don't need to call YAML. bc it already pre exists in method load_library. and replace load_file with load_library method.
-      load_library.each do |meaning, emoticon_symbols|
-        if meaning = "grinning"
-          return load_library[emoticon_symbols][0] = emoticon_symbols[1]
-          if meaning = "happy"
-            return load_library[emoticon_symbols][0] = emoticon_symbols[1]
-            if meaning = "sad"
-              return load_library[emoticon_symbols][0] = emoticon_symbols[1]
-            else
-
-
-        end
-      end
-    end
+# def get_japanese_emoticon(file_path, emoticon)
+#   #loaded_library = load_library(file_path) -- dont need this bc the line under is doing that already
+#     load_library = load_library(file_path) #we don't need to call YAML. bc it already pre exists in method load_library. and replace load_file with load_library method.
+#       load_library.each do |meaning, emoticon_symbols|
+#         if meaning = "grinning"
+#           return load_library[emoticon_symbols][0] = emoticon_symbols[1]
+#           if meaning = "happy"
+#             return load_library[emoticon_symbols][0] = emoticon_symbols[1]
+#             if meaning = "sad"
+#               return load_library[emoticon_symbols][0] = emoticon_symbols[1]
+#             else
+#
+#
+#         end
+#       end
+#     end
 
 def get_english_meaning(file_path, japanese_emoticon)
   library = load_library(file_path) #setting var = to method + file_path arg.
