@@ -32,6 +32,7 @@ def get_japanese_emoticon(file_path, english_emoticon)
       #load_library.each do |meaning, emoticon_symbols|
         if library["get_emoticon"].include? (english_emoticon) #variable + calling key directly.include? english_emoticon placeholder
           library["get_emoticon"][english_emoticon] #returning get_emoticon key (NOT GET_MEANING key) with english_emoticon
+          #because get_meaning = japanese emoticon, get_emoticon = english emoticon
         else
           "Sorry, that emoticon was not found"
         end
@@ -46,3 +47,6 @@ def get_english_meaning(file_path, japanese_emoticon)
         "Sorry, that emoticon was not found"
       end
     end
+
+
+ 
