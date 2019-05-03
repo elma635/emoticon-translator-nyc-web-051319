@@ -51,4 +51,4 @@ def get_english_meaning(file_path, japanese_emoticon)
       else
         "Sorry, that emoticon was not found"
   end
-end
+
