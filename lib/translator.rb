@@ -8,7 +8,7 @@ def load_library(file_path) #arg is taking in a string, so it's using whatevers 
       emoticons.each do |meaning, emoticon_symbols| #iterate over resulting hash (emoticons)
           translator[:get_meaning][emoticon_symbols[1]] = meaning #when you make the key you have to set it equal to something, to make it populate
           #translator[:get_emoticon][emoticon_symbols[2]] = emoticon_symbols
- #binding.pry
+ binding.pry
 
           #this is how we want it to look:
         # {
@@ -25,7 +25,7 @@ def load_library(file_path) #arg is taking in a string, so it's using whatevers 
   translator
 end
 
-# 
+#
 # def get_japanese_emoticon(file_path, emoticon)
 #   #loaded_library = load_library(file_path) -- dont need this bc the line under is doing that already
 #     load_library = YAML.load_file(file_path)
