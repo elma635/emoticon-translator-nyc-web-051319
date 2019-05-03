@@ -1,7 +1,7 @@
 require 'yaml'
 require 'pry'
 
- 
+
 def load_library(file_path) #arg is taking in a string, so it's using whatevers in the .yml file so file_path
   emoticons = YAML.load_file(file_path) #we don't have to use path.yml because calling . on anything = calling method. so call on the file path which refers to info in emoticons.yml
     translator = {"get_meaning" => {}, "get_emoticon" => {}}
