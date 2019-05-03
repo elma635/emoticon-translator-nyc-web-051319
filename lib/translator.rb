@@ -26,19 +26,19 @@ def load_library(file_path) #arg is taking in a string, so it's using whatevers 
 end
 
 #
-# def get_japanese_emoticon(file_path, emoticon)
-#   #loaded_library = load_library(file_path) -- dont need this bc the line under is doing that already
-#     load_library = YAML.load_file(file_path)
-#
-#
-# end
-#
-# def get_english_meaning(file_path, emoticon)
-#   load_library = YAML.load_file(file_path)
-#     load_library.each do |meaning, emoticon_symbols|
-#
-#       if meaning[:grinning] =
-#
-#     end
-#   end
-# end
+def get_japanese_emoticon(file_path, emoticon)
+  #loaded_library = load_library(file_path) -- dont need this bc the line under is doing that already
+    load_library = YAML.load_library(file_path)
+
+
+end
+
+def get_english_meaning(file_path, emoticon)
+  load_library = YAML.load_library(file_path)
+    load_library.each do |meaning, emoticon_symbols|
+
+      if meaning[:grinning] =
+
+    end
+  end
+end
